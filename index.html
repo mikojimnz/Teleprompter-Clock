@@ -14,7 +14,8 @@
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script>
     function run () {
-        $('h1').text(new Date().toLocaleTimeString());
+        var now = new Date();
+        $('h1').text(now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
     }
 
     $( document ).ready(function() {
