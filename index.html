@@ -15,7 +15,7 @@
   <script>
     function run () {
         var now = new Date();
-        $('h1').text(now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
+        $('h1').text((now.getHours() % 12) + ":" + now.getMinutes() + ":" + now.getSeconds());
     }
 
     $( document ).ready(function() {
