@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teleprompter Clock</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="A mirrored clock" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div>
+    <h1>Error</h1>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script>
+    function run () {
+        $('h1').text(new Date().toLocaleTimeString());
+    }
+
+    $( document ).ready(function() {
+        setInterval(run, 1000);
+    });
+  </script>
+</body>
+</html>

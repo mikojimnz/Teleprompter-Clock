@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+div {
+    display: block;
+    padding-top: 12vh;
+}
+
+h1 {
+    color: white;
+    display: block;
+    font-family: 'Helvectia Neue', sans-serif;
+    font-size: 20vw;
+    text-align: center;
+    transform: scale(1, -1);
+}
